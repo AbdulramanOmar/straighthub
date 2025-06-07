@@ -14,9 +14,9 @@ const Footer: React.FC = () => {
         <div className="py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Company Info */}
           <div>
-            <h3 className="text-2xl font-bold mb-6"> straighthub</h3>
+            <h3 className="text-2xl font-bold mb-6"> STRAIGHT HUP</h3>
             <p className="mb-6 text-white/80">
-               "ستريت هب"، نفتح لك التحديات الواقعية من مشاريع وطنية، ونعطيك
+              "ستريت هب"، نفتح لك التحديات الواقعية من مشاريع وطنية، ونعطيك
               المجال لتشارك بحلك. كل شيء يبدأ من فكرة
             </p>
             <div className="flex gap-3">
@@ -68,15 +68,31 @@ const Footer: React.FC = () => {
             <ul className="space-y-4">
               <li className="flex items-center">
                 <FaPhone className="w-5 h-5 ml-3" />
-                <span>+966 123 456 7890</span>
+                <span>
+                  {" "}
+                  <a
+                    href="tel:+966561264385"
+                    className="hover:underline "
+                  >
+                    +966561264385
+                  </a>{" "}
+                </span>
               </li>
               <li className="flex items-center">
                 <IoMdMail className="w-5 h-5 ml-3" />
-                <span>info@straighthub.com</span>
+                <span>
+                  {" "}
+                  <a
+                    href="mailto:Info@straighthup.com"
+                    className="hover:underline "
+                  >
+                    Info@straighthup.com
+                  </a>
+                </span>
               </li>
               <li className="flex items-start">
                 <TiLocation className="w-5 h-5 ml-3 mt-1" />
-                <span>طريق الملك فهد، برج الأعمال،</span>
+                <span>المملكة العربية السعودية.. مكة المكرمة </span>
               </li>
             </ul>
           </div>
@@ -85,7 +101,7 @@ const Footer: React.FC = () => {
         {/* Bottom Footer */}
         <div className="py-6 border-t border-white/20 flex flex-col md:flex-row justify-between items-center">
           <p className="text-white/70 mb-4 md:mb-0">
-            © {new Date().getFullYear()} أسطورة اللوجستية. جميع الحقوق محفوظة
+            © {new Date().getFullYear()} STRAIGHT HUP . جميع الحقوق محفوظة
           </p>
           <div className="flex gap-4">
             <FooterSmallLink href="#">سياسة الخصوصية</FooterSmallLink>

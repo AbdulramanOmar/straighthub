@@ -1,4 +1,3 @@
-
 import { FaPhone } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
 import { TiLocation } from "react-icons/ti";
@@ -35,8 +34,14 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-bold mb-1">اتصل بنا</h4>
-                  <p className="text-gray-600 mb-1">+966 123 456 7890</p>
-                  <p className="text-gray-600">+966 123 456 7891</p>
+                  <p className="text-gray-600 mb-1">
+                    <a
+                      href="tel:+966561264385"
+                      className="hover:underline hover:text-black"
+                    >
+                      +966561264385
+                    </a>{" "}
+                  </p>
                 </div>
               </div>
 
@@ -47,9 +52,13 @@ const Contact = () => {
                 <div>
                   <h4 className="font-bold mb-1">البريد الإلكتروني</h4>
                   <p className="text-gray-600 mb-1">
-                    info@straighthub.com
+                    <a
+                      href="mailto:Info@straighthup.com"
+                      className="hover:underline hover:text-black"
+                    >
+                      Info@straighthup.com
+                    </a>
                   </p>
-                  <p className="text-gray-600">support@straighthub.com</p>
                 </div>
               </div>
 
@@ -59,11 +68,9 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-bold mb-1">المقر الرئيسي</h4>
+
                   <p className="text-gray-600">
-                    طريق الملك فهد، برج الأعمال، الطابق 25
-                  </p>
-                  <p className="text-gray-600">
-                    الرياض، المملكة العربية السعودية
+                    المملكة العربية السعودية.. مكة المكرمة
                   </p>
                 </div>
               </div>
@@ -130,10 +137,12 @@ const Contact = () => {
                 >
                   الموضوع
                 </label>
-                
-                <input id="subject" placeholder="موضوع الرسالة" required 
+
+                <input
+                  id="subject"
+                  placeholder="موضوع الرسالة"
+                  required
                   className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-straighthub"
-                
                 />
               </div>
 

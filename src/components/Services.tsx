@@ -7,23 +7,23 @@ export const serviceContent = [
     icon: "/service (5).png",
   },
   {
-    name: " مواجهة التحديات الرقمية",
+    name: "حلول الذكاء الاصطناعي",
 
     icon: "/service (4).png",
   },
   {
-    name: " بناء شراكات استراتيجية",
-
+    
+    name: "تطوير الأنظمة الذكية",
     icon: "/service (3).png",
   },
   {
-    name: " تعزيز المشاركة المجتمعية",
-
+    name: "استشارات استراتيجية تقنية",
+    
     icon: "/service (1).png",
   },
   {
-    name: "بنية تحتية رقمية",
-
+    
+    name: "بنية تحتية سحابية",
     icon: "/service (2).png",
   },
   {
@@ -36,8 +36,8 @@ const Services = () => {
   return (
     <section className="py-10 " id="services">
       <Title
-        title="الخدمات"
-        subtitle="عندك حل أو ابتكار مجموعة تعزز من أداء الجهات الكبرى والمشاريع الواعدة وتساعدها على التوسع بذكاء."
+        title="حلول الابتكار"
+        subtitle="عندك حل أو ابتكار مجموعة تعزز من أداء الجهات الكبرى والمشاريع الواعدة وتساعدها على التوسع بذكاء؟"
       />
       <div className="container">
         <motion.div
@@ -82,6 +82,9 @@ const Services = () => {
           })}
         </motion.div>
       </div>
+       <button className="px-8 py-3 block my-5 mx-auto font-bold bg-straighthub text-white rounded-lg hover:scale-105 transition transform">
+          ابدا معنا
+          </button>
     </section>
   );
 };

@@ -126,7 +126,7 @@ const HeroSection: React.FC = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
         >
-          <span className="text-straighthub">فكرتك.. </span> ممكن تبني مستقبل
+          <span className="text-straighthub">بعد فكرتك.. </span> ممكن تبني مستقبل
         </motion.h1>
 
         <motion.p
@@ -135,7 +135,7 @@ const HeroSection: React.FC = () => {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5, duration: 1 }}
         >
-          حيث تلتقي التقنيات الحديثة بالحلول الذكية، وتُصنع الفرص العظيمة.
+    شارك بحلك، واختر التحدي المناسب، وكن جزءًا من رحلة تحويل الأفكار إلى إنجازات.
         </motion.p>
 
         <motion.div
