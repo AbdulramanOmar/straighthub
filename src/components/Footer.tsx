@@ -1,10 +1,11 @@
 import React from "react";
 
-import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
+import {  FaInstagram, FaLinkedin } from "react-icons/fa";
 import { FaPhone } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
 import { TiLocation } from "react-icons/ti";
 import { serviceContent } from "./Services";
+import { FaXTwitter } from "react-icons/fa6";
 
 const Footer: React.FC = () => {
   return (
@@ -20,10 +21,10 @@ const Footer: React.FC = () => {
               المجال لتشارك بحلك. كل شيء يبدأ من فكرة
             </p>
             <div className="flex gap-3">
-              <SocialIcon icon={<FaFacebook className="w-5 h-5" />} />
-              <SocialIcon icon={<FaTwitter className="w-5 h-5" />} />
-              <SocialIcon icon={<FaInstagram className="w-5 h-5" />} />
-              <SocialIcon icon={<FaLinkedin className="w-5 h-5" />} />
+             
+              <SocialIcon icon={<FaXTwitter className="w-5 h-5" />} link="https://x.com/straighthup?t=f0bxv7ilo5DTRhOtY-YN6w&amp;s=09"/>
+              <SocialIcon icon={<FaInstagram className="w-5 h-5" />} link="https://www.instagram.com/straighthup/?igsh=MWgydG9jajA4c3Bjbg%3D%3D#"/>
+              <SocialIcon icon={<FaLinkedin className="w-5 h-5" />} link="https://www.linkedin.com/company/Straighthup" />
             </div>
           </div>
 
@@ -139,11 +140,15 @@ const FooterSmallLink: React.FC<FooterLinkProps> = ({ href, children }) => (
 
 interface SocialIconProps {
   icon: React.ReactNode;
+  link: string;
 }
 
-const SocialIcon: React.FC<SocialIconProps> = ({ icon }) => (
+const SocialIcon: React.FC<SocialIconProps> = ({ icon , link }) => (
   <a
-    href="#"
+    href={link}
+    target="_blank"
+    rel="noopener noreferrer"
+    
     className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors duration-300"
   >
     {icon}
