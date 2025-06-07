@@ -72,7 +72,7 @@ const Footer: React.FC = () => {
               </li>
               <li className="flex items-center">
                 <IoMdMail className="w-5 h-5 ml-3" />
-                <span>info@logisticscompany.com</span>
+                <span>info@straighthub.com</span>
               </li>
               <li className="flex items-start">
                 <TiLocation className="w-5 h-5 ml-3 mt-1" />

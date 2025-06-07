@@ -139,21 +139,7 @@ const HeroSection: React.FC = () => {
         </motion.p>
 
         <motion.div
-          className="flex flex-col md:flex-row gap-4 justify-center mb-12"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1, duration: 1 }}
-        >
-          <button className="px-8 py-3 font-bold bg-straighthub text-white rounded-lg hover:scale-105 transition transform">
-            شاركنا الان
-          </button>
-          <button className="px-8 py-3 font-bold border border-straighthub text-straighthub rounded-lg transition">
-            تواصل معنا
-          </button>
-        </motion.div>
-
-        <motion.div
-          className="flex items-center  lg:flex-nowrap flex-wrap justify-center  gap-5"
+          className="flex items-center  lg:flex-nowrap flex-wrap  lg:justify-center  gap-5"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.5, duration: 1 }}
@@ -163,11 +149,11 @@ const HeroSection: React.FC = () => {
               <LuBrainCircuit className="text-straighthub text-3xl " />
             </div>
             <div>
-              <h3 className="font-bold text-lg text-right">
+              <h3 className="font-bold text-base lg:text-lg text-right">
                 {" "}
                 حلول الذكاء الاصطناعي
               </h3>
-              <p className="text-sm text-gray-400  text-right">
+              <p className="lg:text-sm text-xs text-gray-400  text-right">
                 نحو مستقبل رقمي أكثر ذكاءً
               </p>
             </div>
@@ -182,7 +168,9 @@ const HeroSection: React.FC = () => {
                 {" "}
                 بنية تحتية سحابية
               </h3>
-              <p className="text-sm text-gray-400  text-right">خدمات سحابية مرنة وآمنة</p>
+              <p className="text-sm text-gray-400  text-right">
+                خدمات سحابية مرنة وآمنة
+              </p>
             </div>
           </div>
 
@@ -200,6 +188,20 @@ const HeroSection: React.FC = () => {
               </p>
             </div>
           </div>
+        </motion.div>
+
+        <motion.div
+          className="flex flex-row gap-4 justify-center mt-12"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 1, duration: 1 }}
+        >
+          <button className="px-8 py-3 font-bold bg-straighthub text-white rounded-lg hover:scale-105 transition transform">
+            شاركنا الان
+          </button>
+          <button className="px-8 py-3 font-bold border border-straighthub text-straighthub rounded-lg transition">
+            تواصل معنا
+          </button>
         </motion.div>
       </div>
     </section>

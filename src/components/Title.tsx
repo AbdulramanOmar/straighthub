@@ -11,7 +11,7 @@ const Title = ({ title, subtitle }: TitleProps) => {
 
   return (
     <div className="text-center mb-10">
-      <h3 className="text-4xl font-bold mb-5">
+      <h3 className="lg:text-4xl text-3xl font-bold mb-5">
         <span className="relative z-10 inline-block">
         -  {title} -
 
@@ -25,7 +25,7 @@ const Title = ({ title, subtitle }: TitleProps) => {
       </h3>
 
       {/* Subtitle with letter-by-letter animation */}
-      <h4 className="text-lg font-medium relative z-20">
+      <h4 className="lg:text-lg text-sm font-medium relative z-20">
       ”
         {subtitleLetters.map((char, index) => (
           <motion.span

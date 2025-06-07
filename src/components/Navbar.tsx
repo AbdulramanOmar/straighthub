@@ -20,7 +20,7 @@ const navbarLinks = [
 
   {
     title: "المجالات",
-    href: "/#sectors",
+    href: "/#sector",
   },
   {
     title: "البرنامج التدريبي",
@@ -93,16 +93,15 @@ const Navbar = () => {
                   </a>
                 </li>
               ))}
-              <li>
+              <li className="flex flex-row gap-2">
                 <button className="w-full bg-straighthub text-white px-4 py-2 rounded-lg mt-2">
                   تواصل معنا
                 </button>
-              </li>
-              <li>
                 <button className="w-full bg-gray-100 text-gray-800 px-4 py-2 rounded-lg">
                   احجز الآن
                 </button>
               </li>
+            
             </ul>
           </motion.div>
         )}

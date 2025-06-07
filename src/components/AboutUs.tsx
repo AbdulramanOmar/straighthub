@@ -1,19 +1,14 @@
 import { motion } from "framer-motion";
-import Title from "./Title";
-
 const stats = [
   {
-
     label: "الشركات",
     count: 16,
   },
   {
-    
     label: " مبتكرين",
     count: 19,
   },
   {
-    
     label: "براءات اختراع",
     count: 9,
   },
@@ -23,10 +18,6 @@ const AboutUs = () => {
   return (
     <div>
       <section className="py-10 " id="about">
-        <Title
-          title="من نحن"
-          subtitle={`في "ستريت هب"، نفتح لك التحديات الواقعية من مشاريع وطنية،`}
-        />
         <div className="container mx-auto px-4">
           <div className=" flex flex-col lg:flex-row items-center gap-10">
             {/* النص */}
@@ -60,10 +51,9 @@ const AboutUs = () => {
                   </svg>
                 </span>
               </div>
-              <p className="text-[#777] text-right font-medium text-lg mt-5 leading-loose ">
+              <p className="text-[#777] text-right font-medium text-lg my-5 leading-loose ">
                 في "ستريت هب"، نفتح لك التحديات الواقعية من مشاريع وطنية، ونعطيك
-                المجال لتشارك بحلك. كل شيء يبدأ من فكرة، لكن هنا، الفكرة تروح
-                أبعد من الخيال.. وتوصل للتجربة
+                المجال لتشارك بحلك.
               </p>
               <div className="grid grid-cols-3 gap-5 text-center ">
                 {stats.map((item, index) => (
@@ -71,8 +61,12 @@ const AboutUs = () => {
                     key={index}
                     className="flex flex-col items-center space-y-2"
                   >
-                    <p className="text-5xl lg:text-7xl font-bold text-straighthub ">{item.count}+</p>
-                    <p className="text-lg font-bold ">{item.label}</p>
+                    <p className="text-5xl stroke-current font-bold text-straighthub ">
+                      {item.count}+
+                    </p>
+                    <p className="text-lg font-bold text-gray-800">
+                      {item.label}
+                    </p>
                   </div>
                 ))}
               </div>
